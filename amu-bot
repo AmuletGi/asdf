@@ -1,15 +1,10 @@
-//Get discord.js
 const Discord = require('discord.js');
-
-//Create client instance as bot
 const botAmu = new Discord.Client();
 
-//Set listener on 'ready'
 botAmu.on('ready', () => {
   console.log('Amu ready!');
 });
 
-//Set listener on 'message'
 botAmu.on('message', message => {
   if (message.content === '1v1') {
     message.reply('QuickScope');
