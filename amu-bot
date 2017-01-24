@@ -2,18 +2,18 @@
 const Discord = require('discord.js');
 
 //Create client instance as bot
-const botRem = new Discord.Client();
+const botAmu = new Discord.Client();
 
 //Set listener on 'ready'
-botRem.on('ready', () => {
-  console.log('Rem ready!');
+botAmu.on('ready', () => {
+  console.log('Amu ready!');
 });
 
 //Set listener on 'message'
-botRem.on('message', message => {
-  if (message.content === 'ฉันรักเอมิเลีย') {
-    message.reply('ถึงยังไงเรมก็รักสุบารุค่ะ');
+botAmu.on('message', message => {
+  if (message.content === '1v1') {
+    message.reply('QuickScope');
   }
 });
 
-botRem.login('MjczMzEyOTI3MTE1OTAyOTc2.C2huJQ.1pKUt4QoVFw3ZpSP2sAkWVICGu4');
+botAmu.login('MjczMzEyOTI3MTE1OTAyOTc2.C2huJQ.1pKUt4QoVFw3ZpSP2sAkWVICGu4');
